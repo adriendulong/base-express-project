@@ -1,7 +1,8 @@
 {
 	"name": "base-express-project",
 	"version": "1.0.0",
-	"description": "This a base project to start with when building a node express project",
+	"description":
+		"This a base project to start with when building a node express project",
 	"main": "index.js",
 	"scripts": {
 		"test": "jest --coverage",
@@ -25,5 +26,12 @@
 		"dotenv": "^4.0.0",
 		"jest": "^21.2.1",
 		"nodemon": "^1.12.1"
+	},
+	"jest": {
+		"collectCoverageFrom": [
+			"**/*.{js,jsx}",
+			"!**/node_modules/**",
+			"!**/vendor/**"
+		]
 	}
 }
